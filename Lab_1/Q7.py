@@ -2,13 +2,15 @@
 #Example; ([1,2],[3,4]) -> [3,4]
 
 
-def biggerTwo(array1,array2):
-    if(sum(array1)>sum(array2)):
-        return array1
-    elif(sum(array1)==sum(array2)):
-        print "Both are equaly"
-    else:
-        return array2
+def biggerTwo(A):
+	print("\nInput: ",A)
+	if(sum(A[0])>sum(A[1])):
+		return A[0]
+	elif(sum(A[0])==sum(A[1])):
+		print ("Both are equally")
+	else:
+		return A[1]
 
-print "([1,2],[3,4]) -> ",biggerTwo([1,2],[3,4]),"\n([3,4],[1,2]) -> ",\
-    biggerTwo([3,4],[1,2]),"\n([1,1],[1,2]) -> ",biggerTwo([1,1],[1,2])
+bTwo = ([[1,2],[3,4]],[[3,4],[1,2]],[[1,1],[1,2]])
+for i in range(len(bTwo)):
+	print("Bigger is ", biggerTwo(bTwo[i]))
