@@ -1,10 +1,12 @@
-#counting sort algorithm
-
+#
+# Counting sort algorithm
+#
 
 def countSort(arr):
-    newArray = [0] * (max(arr)+1)
+    maxArr = max(arr)
+    newArray = [0] * (maxArr + 1)
     for a in arr:
-        newArray[a]+=1
+        newArray[a] += 1
     i = 0
     for a in range((max(arr)+1)):
         for c in range(newArray[a]):
@@ -13,5 +15,5 @@ def countSort(arr):
     return (arr)
 
 
-array1=([4,29,2,2,110,99,5])
-print countSort(array1)
+array1 = ([4, 29, 2, 2, 110, 99, 5])
+print (countSort(array1))

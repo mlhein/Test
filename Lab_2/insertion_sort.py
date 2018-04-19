@@ -1,16 +1,13 @@
-def default_compare(a, b):
-  if a < b:
-    return -1
-  elif a > b:
-    return 1
-  return 0
+# This one is for the use of Q3_BucketSort
+# No lab question.
 
-def sort(array, compare=default_compare):
-  for i in range(0, len(array)):
-    min_index = i
-    for j in range(i + 1, len(array)):
-      if compare(array[j], array[min_index]) < 0:
-        min_index = j
-    if min_index != i:
-      array[i], array[min_index] = array[min_index], array[i]
-  return array
+def insertionSort(List):
+    for i in range(1, len(List)):
+        currentNumber = List[i]
+        for j in range(i - 1, -1, -1):
+            if List[j] > currentNumber :
+                List[j], List[j + 1] = List[j + 1], List[j]
+            else:
+                List[j + 1] = currentNumber
+                break
+    return List
