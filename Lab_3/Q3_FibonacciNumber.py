@@ -9,4 +9,4 @@ def fibonacciNumber(number):
 # Set how many fibonacci number you want.
 HowMany = 5
 for i in range(HowMany+1):
-    print(fibonacciNumber(i), end=' ')
+    print fibonacciNumber(i), ' '

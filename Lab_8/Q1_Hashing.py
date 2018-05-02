@@ -23,7 +23,8 @@ def print_dict(dic):
 if __name__ == "__main__":
     listDic = {'WEK130013': 'Jason', 'WEK130025': 'Billy', 'WEK130020': 'Kim'}
     while True:
-        inCMD = raw_input("\n1 = Print list\n2 = Delete existing student\n3 = Add new Student\n0 = Quit\nEnter cmd: ")
+        inCMD = raw_input("\n1 = Print list\n2 = Delete existing student"
+        "\n3 = Add new Student\n0 = Quit\nEnter cmd: ")
         if inCMD == '2':
             listDic = del_dict(listDic)
         elif inCMD == '1':

@@ -11,7 +11,7 @@ def F(n):
 def F(n):
     return ((1+sqrt(5))**n-(1-sqrt(5))**n)/(2**n*sqrt(5))
 
-inVar=input("Enter a number (RECURSIVE) : ")
+inVar=input("Enter a number (RECURSIVE): ")
 print F(inVar)
 
 import sys
@@ -30,7 +30,7 @@ def FastFib(n):
         return table[n]
 
 def main():
-    print('Enter a number (ITERATIVE) : ')
+    print('Enter a number (ITERATIVE): ')
     num = int(sys.stdin.readline())
     print(FastFib(num))
 

@@ -39,5 +39,6 @@ def bucketSort(myList, bucketSize=DEFAULT_BUCKET_SIZE):
 
     return sortedArray
 
-array1 = ([4, 29, 2, 2, 110, 99, 5])
-print(bucketSort(array1))
+if __name__ == '__main__':
+    sortedArray = bucketSort([12, 23, 4, 5, 3, 2, 12, 81, 56, 95])
+    print(sortedArray)

@@ -14,6 +14,4 @@ def powerNumber(number,power):
     else:
         return "Power must be positive"
 
-
-
 print(powerNumber(10,3))

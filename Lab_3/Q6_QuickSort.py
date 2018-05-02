@@ -33,6 +33,6 @@ def partition(myList, start, end):
     return right
 
 alist = [54,26,93,17,77,31,44,55,20]
+print "Before: ", alist
 quickSort(alist, 0, len(alist) - 1)
-
-print("Before: ", alist, "\nAfter: ", alist)
+print "After: ", alist

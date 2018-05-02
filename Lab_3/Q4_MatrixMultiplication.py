@@ -11,8 +11,6 @@ def matMult (A, B):
     # Create the result matrix
     # Dimensions would be rows_A x cols_B
     C = [[0 for row in range(cols_B)] for col in range(rows_A)]
-    print C
-
     for i in range(rows_A):
         for j in range(cols_B):
             for k in range(cols_A):
@@ -21,6 +19,5 @@ def matMult (A, B):
 
 x = [[1,2,3],[4,5,6],[7,8,9],[10,11,12]]
 y = [[1,2],[1,2],[3,4]]
-
-print(matMult(y,y))
-
+print "x = ", x, "\ny = ", y
+print "x.y = ", matMult(x,y)
