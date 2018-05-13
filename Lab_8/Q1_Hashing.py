@@ -11,12 +11,8 @@ def del_dict(dic):
     del dic[keys]
     return dic
 def print_dict(dic):
-    myMatric = []
-    myName = []
-    for m in dic.iterkeys():
-        myMatric.append(m)
-    for n in dic.itervalues():
-        myName.append(n)
+    myMatric = dic.keys()
+    myName = dic.values()
     for i in range(len(myMatric)):
         print "\nMatric: ", myMatric[i], "\nName: ", myName[i]
 
